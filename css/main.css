@@ -34,3 +34,28 @@ nav h1{
     height: 250px;
     width: 250px;
 }
+
+.views {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+}
+
+    .views .view {
+        width: 100%;
+        min-height: 100%;
+
+        position: absolute;
+        top: 0;
+
+        display: none;
+    }
+
+        .views .view h2 {
+            text-align: center;
+            color: grey;
+        }
+
+        .views .view.active {
+
+        }
