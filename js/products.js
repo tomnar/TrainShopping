@@ -113,55 +113,55 @@ products = [{
         "img": "18.png"
     }]
 }, {
-    "category": "meat",
+    "category": "Getränke",
     "items": [{
-        "id": 1,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
+        "id": 19,
+        "name": "Weihenstephan Haltbare Milch 1l ",
+        "price": 1.19,
+        "description": "1,5% Fett absolut",
+        "img": "19.png"
     }, {
-        "id": 2,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
+        "id": 20,
+        "name": "CHLIANTI CLASSICO Denominazione di Origine Controllata e Garantita Barone Ricasoli 0,75l",
+        "price": 7.99,
+        "description": "Klassisches Chianti-Rot mit festem Rand; in der Nase feine Kirscharomen und Anklänge von Veilchen. Am Gaumen fruchtig, kompakter mittelgewichtiger Körper mit frischem Abgang.",
+        "img": "20.png"
     }, {
-        "id": 3,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
+        "id": 21,
+        "name": "Warsteiner Pilsener Open Basket 6x0,5l",
+        "price": 4.79,
+        "description": "",
+        "img": "21.png"
     }, {
-        "id": 4,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
+        "id": 22,
+        "name": "Scavi&Ray Prosecco Frizzante DOC 0,75l",
+        "price": 5.99,
+        "description": "Alkoholgehalt 10.5% vol.",
+        "img": "22.png"
     }, {
-        "id": 5,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
+        "id": 23,
+        "name": "hohes C Orangensaft 6x1l",
+        "price": 10.50,
+        "description": "",
+        "img": "23.png"
     }, {
-        "id": 6,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
+        "id": 24,
+        "name": "Coca-Cola 1l",
+        "price": 0.99,
+        "description": "",
+        "img": "24.png"
     }, {
-        "id": 7,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
+        "id": 25,
+        "name": "REWE Beste Wahl Mineralwasser still 1l",
+        "price": 0.33,
+        "description": "",
+        "img": "25.png"
     }, {
-        "id": 8,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
+        "id": 26,
+        "name": "Moet & Chandon Champagner 0,75l",
+        "price": 38.99,
+        "description": "Alkoholgehalt 12.0% vol.",
+        "img": "26.png"
     }]
 }, {
     "category": "meat",
