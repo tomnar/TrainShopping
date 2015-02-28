@@ -28,21 +28,71 @@ nav h1{
 
 /* mainview */
 .hScroll{
-    height: 250px;
+    height: 150px;
     width: 100%;
     overflow: scroll;
+}
+.views .view.productView{
+    background-color: #E6E7E8;
+}
+.views .view.productView h2{
+    text-align: left;
+    margin: 10px 0px 10px 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.views .view.productView h2::before{
+    content: "";
+    background-color: gray;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+.views .view.productView h3{
+    text-align: center;
+    margin: 5px 0px 0px 0px;
+    font-size: 10px;
+    color: gray;
+    text-transform: uppercase;
 }
 .hScroll div{
     white-space: nowrap;
 }
 .hScroll img{
-    height: 200px;
-    width: 200px;
+    height: 60px;
+    width: 60px;
+    margin-left: 19px;
+    margin-top: -30px;
+    border-radius: 40px;
+    border: 2px solid rgba(147, 149, 151, 0.5);;
 }
-div.item{
-    height: 250px;
-    width: 250px;
+.hScroll div.item{
+    height: 100px;
+    width: 100px;
     display: inline-block;
+    background-color: white;
+    margin: 30px 5px 0px 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(147, 149, 151, 0.75);
+    position: relative;
+}
+.hScroll div.item div{
+    color: gray;
+    padding: 5px;
+    white-space: normal;
+    height: 35px;
+    overflow: hidden;
+    font-size: 9px;
+    text-align: center;
+}
+.hScroll div.item span{
+    color: gray;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 10px;
 }
 
 .views {

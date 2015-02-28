@@ -32,13 +32,15 @@ $( document ).ready(function() {
             innerHtml += "" +
                 "<div class=\"item\">" +
                     "<image src=\"img/placeholder_product.jpg\"></image>" +
-                    "<div>" + itemName + "</div>" +
+                    "<h3>" + itemName + "</h3>" +
+                    "<div>" + itemDescription + "</div>" +
+                    "<span>" + itemPrice + " &euro;</span>" +
                 "</div>"
         }
 
         productView.append(
+            "<h2>" + catName + "</h2>" +
             "<div class=\"hScroll\">" +
-                "<h2>" + catName + "</h2>" +
                 "<div>" +
                     innerHtml +
                 "</div>" +
