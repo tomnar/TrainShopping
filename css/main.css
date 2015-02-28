@@ -20,3 +20,17 @@ nav .cart{
 nav h1{
     text-align: center;
 }
+
+/* mainview */
+.hScroll{
+    height: 250px;
+    width: 100%;
+    overflow: scroll;
+}
+.hScroll div{
+    white-space: nowrap;
+}
+.hScroll img{
+    height: 250px;
+    width: 250px;
+}
