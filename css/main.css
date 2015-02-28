@@ -1,0 +1,9 @@
+html, body{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    background-color: aliceblue;
+    height: 30px;
+    width: 100%;
+}
