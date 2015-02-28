@@ -11,6 +11,10 @@ $( document ).ready(function() {
 
     initViews();
 
+    $('.cart.button').click(function(){
+        setView(Math.round(Math.random() * $views.length - 1));
+    });
+
     var productView = $('.productView');
     for(var i = 0; i < products.length; i++){
         var cat = products[i];

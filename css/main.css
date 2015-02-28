@@ -1,10 +1,13 @@
 html, body{
     padding: 0px;
     margin: 0px;
+    font-size: 10px;
+    font-family: "Helvetica", sans-serif;
 }
 nav{
     background-color: aliceblue;
-    height: 30px;
+    font-size: 2em;
+    height: auto;
     width: 100%;
 }
 nav .back{
@@ -19,6 +22,8 @@ nav .cart{
 }
 nav h1{
     text-align: center;
+    margin: 0;
+    padding: 2px;
 }
 
 /* mainview */
@@ -44,6 +49,7 @@ div.item{
     position: relative;
     min-height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
     .views .view {
