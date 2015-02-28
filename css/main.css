@@ -7,3 +7,16 @@ nav{
     height: 30px;
     width: 100%;
 }
+nav .back{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+nav .cart{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+nav h1{
+    text-align: center;
+}
