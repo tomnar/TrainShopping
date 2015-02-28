@@ -52,116 +52,116 @@ products = [{
 }, {
     "category": "Hygiene",
     "items": [{
-        "id": 9,
+        "id": 201,
         "name": "Tempo Feuchte Toilettentücher mit Kamille 42 Stück",
         "price": 1.95,
         "description": "Tempo feuchte Toilettentücher sind die ideale Ergänzung zu trockenem Toilettenpapier - für ein sicheres Gefühl von Sauberkeit.",
-        "img": "9.png"
+        "img": "201.png"
     }, {
-        "id": 10,
+        "id": 202,
         "name": "Rexona men Cobalt 150ml",
         "price": 1.59,
         "description": "REXONA AE COBALT",
-        "img": "10.png"
+        "img": "202.png"
     }, {
-        "id": 11,
+        "id": 203,
         "name": "Isana Deo Zerstäuber",
         "price": 2.99,
         "description": "ISANA Deo Zerstäuber Sensitiv mit 24h-Wirkkomplex schützt zuverlässig und langanhaltend vor Körpergeruch und gibt Ihnen optimale Sicherheit für den ganzen Tag.",
-        "img": "11.png"
+        "img": "203.png"
     }, {
-        "id": 12,
+        "id": 204,
         "name": "o.b. Original Normal 32 Stück",
         "price": 3.39,
         "description": "Zuverlässiger Schutz.",
-        "img": "12.png"
+        "img": "204.png"
     }, {
-        "id": 13,
+        "id": 205,
         "name": "Pampers ACTIVE FIT WINDELN GR.4 SPARPACK",
         "price": 8.59,
         "description": "",
-        "img": "13.png"
+        "img": "205.png"
     }, {
-        "id": 14,
+        "id": 206,
         "name": "Redken extreme shampoo reisegrösse 50 ml",
         "price": 5.00,
         "description": "",
-        "img": "15.jpg"
+        "img": "206.jpg"
     }, {
-        "id": 15,
+        "id": 207,
         "name": "PLANTUR 39 COFFEIN-SHAMPOO COLOR 250 ML",
         "price": 8.99,
         "description": "",
-        "img": "15.png"
+        "img": "207.png"
     }, {
-        "id": 16,
+        "id": 208,
         "name": "meridol Zahnbürste Sanft",
         "price": 2.99,
         "description": "",
-        "img": "16.png"
+        "img": "208.png"
     }, {
-        "id": 17,
+        "id": 209,
         "name": "SENSODYNE REPAIR & PROTECT 75ml",
         "price": 4.99,
         "description": "",
-        "img": "17.png"
+        "img": "209.png"
     }, {
-        "id": 18,
+        "id": 210,
         "name": "Gillette Fusion ProGlide Rasierer mit Flexball",
         "price": 11.99,
         "description": "",
-        "img": "18.png"
+        "img": "210.png"
     }]
 }, {
     "category": "Getränke",
     "items": [{
-        "id": 19,
+        "id": 101,
         "name": "Weihenstephan Haltbare Milch 1l ",
         "price": 1.19,
         "description": "1,5% Fett absolut",
-        "img": "19.png"
+        "img": "101.png"
     }, {
-        "id": 20,
+        "id": 102,
         "name": "CHLIANTI CLASSICO Denominazione di Origine Controllata e Garantita Barone Ricasoli 0,75l",
         "price": 7.99,
         "description": "Klassisches Chianti-Rot mit festem Rand; in der Nase feine Kirscharomen und Anklänge von Veilchen. Am Gaumen fruchtig, kompakter mittelgewichtiger Körper mit frischem Abgang.",
-        "img": "20.png"
+        "img": "102.png"
     }, {
-        "id": 21,
+        "id": 103,
         "name": "Warsteiner Pilsener Open Basket 6x0,5l",
         "price": 4.79,
         "description": "",
-        "img": "21.png"
+        "img": "103.png"
     }, {
-        "id": 22,
+        "id": 104,
         "name": "Scavi&Ray Prosecco Frizzante DOC 0,75l",
         "price": 5.99,
         "description": "Alkoholgehalt 10.5% vol.",
-        "img": "22.png"
+        "img": "104.png"
     }, {
-        "id": 23,
+        "id": 105,
         "name": "hohes C Orangensaft 6x1l",
         "price": 10.50,
         "description": "",
-        "img": "23.png"
+        "img": "105.png"
     }, {
-        "id": 24,
+        "id": 106,
         "name": "Coca-Cola 1l",
         "price": 0.99,
         "description": "",
-        "img": "24.png"
+        "img": "106.png"
     }, {
-        "id": 25,
+        "id": 107,
         "name": "REWE Beste Wahl Mineralwasser still 1l",
         "price": 0.33,
         "description": "",
-        "img": "25.png"
+        "img": "107.png"
     }, {
-        "id": 26,
+        "id": 108,
         "name": "Moet & Chandon Champagner 0,75l",
         "price": 38.99,
         "description": "Alkoholgehalt 12.0% vol.",
-        "img": "26.png"
+        "img": "108.png"
     }]
 }, {
     "category": "meat",
