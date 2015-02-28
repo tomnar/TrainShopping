@@ -1,5 +1,5 @@
 products = [{
-    "category": "eat",
+    "category": "Essen",
     "items": [{
         "id": 1,
         "name": "Sandwich Club",
@@ -76,29 +76,41 @@ products = [{
         "description": "Zuverlässiger Schutz.",
         "img": "12.png"
     }, {
-        "id": 5,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
+        "id": 13,
+        "name": "Pampers ACTIVE FIT WINDELN GR.4 SPARPACK",
+        "price": 8.59,
+        "description": "",
+        "img": "13.png"
     }, {
-        "id": 6,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
+        "id": 14,
+        "name": "Redken extreme shampoo reisegrösse 50 ml",
+        "price": 5.00,
+        "description": "",
+        "img": "15.jpg"
     }, {
-        "id": 7,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
+        "id": 15,
+        "name": "PLANTUR 39 COFFEIN-SHAMPOO COLOR 250 ML",
+        "price": 8.99,
+        "description": "",
+        "img": "15.png"
     }, {
-        "id": 8,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
+        "id": 16,
+        "name": "meridol Zahnbürste Sanft",
+        "price": 2.99,
+        "description": "",
+        "img": "16.png"
+    }, {
+        "id": 17,
+        "name": "SENSODYNE REPAIR & PROTECT 75ml",
+        "price": 4.99,
+        "description": "",
+        "img": "17.png"
+    }, {
+        "id": 18,
+        "name": "Gillette Fusion ProGlide Rasierer mit Flexball",
+        "price": 11.99,
+        "description": "",
+        "img": "18.png"
     }]
 }, {
     "category": "meat",
