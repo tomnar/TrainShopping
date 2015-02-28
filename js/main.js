@@ -25,7 +25,11 @@ $( document ).ready(function() {
             var itemPrice = item.price;
             var itemDescription = item.description;
             var itemImg = item.img;
-            innerHtml += "<image src=\"img/placeholder_product.jpg\"></image>";
+            innerHtml += "" +
+                "<div class=\"item\">" +
+                    "<image src=\"img/placeholder_product.jpg\"></image>" +
+                    "<div>" + itemName + "</div>" +
+                "</div>"
         }
 
         productView.append(

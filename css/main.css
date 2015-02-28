@@ -31,8 +31,13 @@ nav h1{
     white-space: nowrap;
 }
 .hScroll img{
+    height: 200px;
+    width: 200px;
+}
+div.item{
     height: 250px;
     width: 250px;
+    display: inline-block;
 }
 
 .views {
