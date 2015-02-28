@@ -12,11 +12,29 @@ $( document ).ready(function() {
     initViews();
 
     $('.cart.button').click(function(){
-        setView(Math.round(Math.random() * $views.length - 1));
+        setView(2);
     });
 
     $('.loginView .login').click(function(){
         setView(1);
+    });
+
+    $('.cartView .buy').click(function(){
+        setView(3);
+
+        var myLatlng = new google.maps.LatLng(52.525084,13.369402);
+        var mapOptions = {
+            zoom: 15,
+            center: myLatlng
+        }
+        var map = new google.maps.Map($('.map-canvas')[0], mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            title: 'Hello World!'
+        });
     });
 
     var productView = $('.productView');

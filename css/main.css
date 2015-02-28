@@ -114,6 +114,10 @@ nav h1{
     font-size: 10px;
 }
 
+.mapView .map-canvas{
+    height: 100%;
+}
+
 .views {
     position: relative;
     min-height: 100%;
@@ -125,8 +129,11 @@ nav h1{
         width: 100%;
         min-height: 100%;
 
+        /*
+        breaks the scroll view
         position: absolute;
         top: 0;
+        */
 
         display: none;
     }
