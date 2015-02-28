@@ -111,6 +111,18 @@ products = [{
         "price": 11.99,
         "description": "",
         "img": "210.png"
+    }, {
+        "id": 211,
+        "name": "NIVEA Men Rasierschaum Sensitive",
+        "price": 1.75,
+        "description": "beruhigt & schützt empfindliche Haut vor Irritationen, alkoholfrei, Active Comfort System",
+        "img": "211.png"
+    }, {
+        "id": 212,
+        "name": "Syoss Professional Performance Power Wax 'Max Hold'",
+        "price": 5.99,
+        "description": "mega starker Halt, Pro-Styling Sytem, Struktur wie Wachs, Halt wie Gel ",
+        "img": "212.png"
     }]
 }, {
     "category": "Getränke",
@@ -164,115 +176,50 @@ products = [{
         "img": "108.png"
     }]
 }, {
-    "category": "meat",
+    "category": "Genussmittel",
     "items": [{
-        "id": 1,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
+        "id": 301,
+        "name": "Marlboro American Blend, mit Filter",
+        "price": 5.40,
+        "description": "Die Marke Marlboro steht für Markenqualität und Wachstum. Ab nun sind die Marlboro Red und Blue auch ohne Zusatzstoffe* erhältlich. Die konventionelle Packung wurde gegen ein Zip Pack ohne Folie getauscht. Marlboro ist eine Marke am Puls der Zeit.",
+        "img": "301.jpg"
     }, {
-        "id": 2,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
+        "id": 302,
+        "name": "Feuerzeug",
+        "price": 2.19,
+        "description": "",
+        "img": "302.jpg"
     }, {
-        "id": 3,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
+        "id": 303,
+        "name": "BellaCrema® Speciale",
+        "price": 13.29,
+        "description": "Unsere mildeste Sorte Sorgfältig ausgewählte Arabica-Bohnen sind die Basis des vielschichtigen Aromas unserer Melitta BellaCrema® Sorten. Für die Sorte Speciale entlocken wir den Bohnen mit unserer sanften Röstung das milde Aroma und den leichten Charakter, der von einer zarten, hellgoldenen Crema gekrönt wird. Durch den geringen Säureanteil ist Speciale auch die ideale Grundlage für verführerische Kaffee-Milch-Spezialitäten. ",
+        "img": "303.png"
     }, {
-        "id": 4,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
-    }, {
-        "id": 5,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
-    }, {
-        "id": 6,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
-    }, {
-        "id": 7,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
-    }, {
-        "id": 8,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
+        "id": 304,
+        "name": "MAM Original Beruhigungssauger",
+        "price": 5.29,
+        "description": "2 Stück kiefergerecht, BPA frei, in der Sterilisier-Transportbox, Seidensauger, ab 16 Monate Erhältlich in versch. Farben - nicht wählbar!",
+        "img": "304.jpg"
     }]
 }, {
-    "category": "meat",
+    "category": "Durchmischt",
     "items": [{
-        "id": 1,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
-    }, {
-        "id": 2,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
-    }, {
-        "id": 3,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
-    }, {
-        "id": 4,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
-    }, {
-        "id": 5,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
-    }, {
-        "id": 6,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
-    }, {
-        "id": 7,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
-    }, {
-        "id": 8,
-        "name": "two",
-        "price": 31.33,
-        "description": "this is awesome too",
-        "img": "placeholder"
+        "id": 401,
+        "name": "Der Schmerzspezialist – Wirkt doppelt so schnell gegen Schmerzen",
+        "price": 3.29,
+        "description": "Die neue Generation der Aspirin-Tablette vereint die bewährte Wirkung mit einer neuartigen MicroAktiv-Technologie für einen noch schnelleren Wirkeintritt. Nicht nur bei Kopfschmerzen, sondern auch bei akuten Rücken-, Gelenk- oder Muskelschmerzen - die Aspirin-Tablette mit 500 mg Acetylsalicylsäure..
+",
+        "img": "305.jpg"
     }]
 }, {
-    "category": "meat",
+    "category": "Spezial",
     "items": [{
-        "id": 1,
-        "name": "one",
-        "price": 33.33,
-        "description": "this is awesome",
-        "img": "placeholder"
+        "id": 501,
+        "name": "Sonnenbote",
+        "price": 19.99,
+        "description": "Die ersten Knospen sprießen, die Bäume zeigen sich von ihrer grünsten Seite und die ersten Vögelchen zwitschern wieder... Diese Zeichen von Frühlingsbeginn werden von unserem Strauß "Sonnenbote" wunderbar wiedergegeben. Gelbe Rosen inmitten von gelb-orangen Germini und blauen Myosotis.",
+        "img": "501.jpg"
     }, {
         "id": 2,
         "name": "two",
