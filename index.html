@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Rails Shopping</title>
+    <title>Train Shopping</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -22,13 +22,19 @@
 </head>
 <body>
     <nav>
-        <a class="back button">&lt;</a>
+        <a class="back button">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px"
+                 height="60px" viewBox="0 0 60 60">    
+            <rect x="27.791" y="29.433" transform="matrix(-0.7072 0.707 -0.707 -0.7072 82.2719 52.4745)" fill="#FFFFFF" width="4.958" height="27.68"/>
+            <rect x="27.788" y="13.403" transform="matrix(0.7072 0.7071 -0.7071 0.7072 28.1256 -13.4226)" fill="#FFFFFF" width="4.958" height="27.679"/>
+        </a>
         <h1>TrainShopping</h1>
-        <a class="cart button">o</a>
+        <a class="cart button icon">o</a>
     </nav>
     <div class="views">
-        <div class="view" style="background: blue;">
-            <h2>View #1</h2>
+        <div class="view loginView" data-name="loginView">
+            <div class="logo"></div>
+            <a href="#" class="button login">Login</a>
         </div>
         <div class="view productView">
         </div>

@@ -4,17 +4,33 @@ html, body{
     font-size: 10px;
     font-family: "Helvetica", sans-serif;
 }
+
 nav{
-    background-color: aliceblue;
-    font-size: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: #0e76bc;
+    font-size: 1.2em;
     height: auto;
     width: 100%;
 }
-nav .back{
+
+body.loginView nav {
+    display: none;
+}
+
+nav .back {
     position: absolute;
     top: 2px;
     left: 2px;
+    padding: 2px;
 }
+    nav .back svg {
+        width: 30px;
+        height: 30px;
+    }
+
 nav .cart{
     position: absolute;
     top: 2px;
@@ -23,7 +39,10 @@ nav .cart{
 nav h1{
     text-align: center;
     margin: 0;
-    padding: 2px;
+    padding: 12px 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 /* mainview */
@@ -111,6 +130,34 @@ nav h1{
 
         display: none;
     }
+
+        .views .view .button {
+            padding: 20px 65px;
+            background: white;
+            border-radius: 4px;
+            color: #0e76bc;
+            text-decoration: none;
+            font-size: 3em;
+        }
+
+        .views .view.loginView {
+            background: url("../img/trainblurred.jpg") left top no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+            .views .view.loginView .logo {
+                background: url("../img/TSLogo.svg");
+                background-size: contain;
+                background-color: white;
+                border-radius: 14px;
+                padding: 10px;
+                width: 140px;               
+                height: 140px;   
+                margin: 75px auto 110px;            
+            }
+
+
 
         .views .view h2 {
             text-align: center;

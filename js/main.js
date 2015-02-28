@@ -15,6 +15,10 @@ $( document ).ready(function() {
         setView(Math.round(Math.random() * $views.length - 1));
     });
 
+    $('.loginView .login').click(function(){
+        setView(1);
+    });
+
     var productView = $('.productView');
     for(var i = 0; i < products.length; i++){
         var cat = products[i];
@@ -54,6 +58,7 @@ $( document ).ready(function() {
 function initViews() {
     $currentView = $views.first();
     $currentView.show();
+    $('body').addClass($currentView.data('name'));
     viewHistory.push(0);
     $('.button.back').click(function() {
         if (viewHistory.length > 1) {
@@ -81,6 +86,8 @@ function setView(index, history) {
         }, time, function() {
             $currentView.hide();
             $view.css({zIndex: 0});
+            $('body').removeClass($currentView.data('name')).addClass($view.data('name'));
+
             $currentView = $view;
         });
 
