@@ -23,7 +23,7 @@ $( document ).ready(function() {
                 if(item.amount > 0){
                     list.append("" +
                         "<li>" +
-                            "<img src=\"img/" + item.img + " />" +
+                            "<img src=\"img/" + item.img + "\" />" +
                             "<h3>" + item.name + "</h3>" +
                             "<div>" + item.amount + " x " + item.price + " &euro;</div>" +
                             "<hr>" +
