@@ -23,7 +23,7 @@ $( document ).ready(function() {
                 if(item.amount > 0){
                     list.append("" +
                         "<li>" +
-                            "<img src=\"img/placeholder_product.jpg\" />" +
+                            "<img src=\"img/" + item.img + " />" +
                             "<h3>" + item.name + "</h3>" +
                             "<div>" + item.amount + " x " + item.price + " &euro;</div>" +
                             "<hr>" +
@@ -101,7 +101,7 @@ $( document ).ready(function() {
             cart[itemId] = {"name":itemName, "price":itemPrice, "description": itemDescription, "img": itemImg, "amount": 0};
             innerHtml += "" +
                 "<div class=\"item\">" +
-                    "<image src=\"img/placeholder_product.jpg\"></image>" +
+                    "<image src=\"img/" + itemImg + "\"></image>" +
                     "<h3>" + itemName + "</h3>" +
                     "<span class=\"plus\">+</span>" +
                     "<span class=\"minus\">-</span>" +
