@@ -230,6 +230,11 @@ nav h1{
     padding: 0px;
     top: -80px;
     font-size: 55px;
+    border-radius: 60px;
+    overflow: hidden;
+ }
+.views .view.mapView .code img{
+    width: 100%;
 }
 
 /* codeView */
