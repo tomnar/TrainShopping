@@ -13,14 +13,28 @@ $( document ).ready(function() {
 
     $('.cart.button').click(function(){
 
+        var totalPrice = 0;
+
+        var list = $('ul');
+        list.empty();
         for (var items in cart) { // Iterate through cart items
             if (cart.hasOwnProperty(items)) {
                 var item = cart[items];
                 if(item.amount > 0){
-                    console.log(item);
+                    list.append("" +
+                        "<li>" +
+                            "<img src=\"img/placeholder_product.jpg\" />" +
+                            "<h3>" + item.name + "</h3>" +
+                            "<div>" + item.amount + " x " + item.price + " &euro;</div>" +
+                            "<hr>" +
+                        "</li>"
+                    );
+                    totalPrice += item.amount*item.price;
                 }
             }
         }
+
+        $('.totalPrice').text(totalPrice + " €");
 
         setView(2);
     });
