@@ -232,6 +232,40 @@ nav h1{
     font-size: 55px;
 }
 
+/* codeView */
+.views .view.codeView {
+    background: url("../img/trainblurred.jpg") left top no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow: auto
+}
+.views .view.codeView img{
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 30px;
+    margin-top: 120px;
+}
+.views .view.codeView div.first{
+    color: white;
+    margin-top: 30px;
+    font-size: 16px;
+}
+.views .view.codeView div.second{
+    color: white;
+    font-size: 10px;
+}
+.views .view.codeView .button{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 25px;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    padding: 12px 20px;
+    margin-top: 82px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: inherit;
+}
+
+
 .views {
     position: relative;
     min-height: 100%;

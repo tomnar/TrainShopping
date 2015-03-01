@@ -60,6 +60,10 @@ $( document ).ready(function() {
         });
     });
 
+    $('.code.button').click(function(){
+        setView(4);
+    });
+
     cart = {};
 
     var productView = $('.productView');
