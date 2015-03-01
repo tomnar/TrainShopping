@@ -56,18 +56,18 @@ $( document ).ready(function() {
 
         setView(3);
 
-        var myLatlng = new google.maps.LatLng(52.525084,13.369402);
-        var mapOptions = {
-            zoom: 15,
-            center: myLatlng
-        }
-        var map = new google.maps.Map($('.map-canvas')[0], mapOptions);
+        // var myLatlng = new google.maps.LatLng(52.525084,13.369402);
+        // var mapOptions = {
+        //     zoom: 15,
+        //     center: myLatlng
+        // }
+        // var map = new google.maps.Map($('.map-canvas')[0], mapOptions);
 
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            animation: google.maps.Animation.DROP
-        });
+        // var marker = new google.maps.Marker({
+        //     position: myLatlng,
+        //     map: map,
+        //     animation: google.maps.Animation.DROP
+        // });
     });
 
     $('.code.button').click(function(){
@@ -182,7 +182,7 @@ function setView(index, history) {
             $view.css({zIndex: 0});
             $('body').removeClass($currentView.data('name')).addClass($view.data('name'));
             $currentView = $view;
-            $('.views').height($currentView.height() + 42);
+            // $('.views').height($currentView.height() + 42);
         }});
 
         // slide out current view

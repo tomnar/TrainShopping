@@ -212,7 +212,14 @@ nav h1{
 }
 
 .mapView .map-canvas{
-    height: 585px;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/map.jpg") left center no-repeat;
+    background-size: cover;
+    background-position-x: 33%;
 }
 .mapView .map-info{
     position: absolute;
@@ -220,7 +227,7 @@ nav h1{
     z-index: 1;
     width: 100%;
     background-color: white;
-    top: 603px;
+    bottom: 0;
     height: 200px;
     font-size: 12px;
     padding: 10px;
@@ -285,7 +292,7 @@ nav h1{
     position: relative;
     min-height: 100%;
     width: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
     .views .view {
