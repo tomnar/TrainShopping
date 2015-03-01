@@ -208,8 +208,7 @@ products = [{
         "id": 401,
         "name": "Der Schmerzspezialist – Wirkt doppelt so schnell gegen Schmerzen",
         "price": 3.29,
-        "description": "Die neue Generation der Aspirin-Tablette vereint die bewährte Wirkung mit einer neuartigen MicroAktiv-Technologie für einen noch schnelleren Wirkeintritt. Nicht nur bei Kopfschmerzen, sondern auch bei akuten Rücken-, Gelenk- oder Muskelschmerzen - die Aspirin-Tablette mit 500 mg Acetylsalicylsäure..
-",
+        "description": "Die neue Generation der Aspirin-Tablette vereint die bewährte Wirkung mit einer neuartigen MicroAktiv-Technologie für einen noch schnelleren Wirkeintritt. Nicht nur bei Kopfschmerzen, sondern auch bei akuten Rücken-, Gelenk- oder Muskelschmerzen - die Aspirin-Tablette mit 500 mg Acetylsalicylsäure..",
         "img": "305.jpg"
     }, {
         "id": 402,
@@ -230,7 +229,7 @@ products = [{
         "id": 501,
         "name": "Sonnenbote",
         "price": 19.99,
-        "description": "Die ersten Knospen sprießen, die Bäume zeigen sich von ihrer grünsten Seite und die ersten Vögelchen zwitschern wieder... Diese Zeichen von Frühlingsbeginn werden von unserem Strauß "Sonnenbote" wunderbar wiedergegeben. Gelbe Rosen inmitten von gelb-orangen Germini und blauen Myosotis.",
+        "description": "Die ersten Knospen sprießen, die Bäume zeigen sich von ihrer grünsten Seite und die ersten Vögelchen zwitschern wieder... Diese Zeichen von Frühlingsbeginn werden von unserem Strauß 'Sonnenbote' wunderbar wiedergegeben. Gelbe Rosen inmitten von gelb-orangen Germini und blauen Myosotis.",
         "img": "501.jpg"
     }]
 }]
