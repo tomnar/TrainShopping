@@ -12,6 +12,16 @@ $( document ).ready(function() {
     initViews();
 
     $('.cart.button').click(function(){
+
+        for (var items in cart) { // Iterate through cart items
+            if (cart.hasOwnProperty(items)) {
+                var item = cart[items];
+                if(item.amount > 0){
+                    console.log(item);
+                }
+            }
+        }
+
         setView(2);
     });
 
@@ -32,9 +42,14 @@ $( document ).ready(function() {
         var marker = new google.maps.Marker({
             position: myLatlng,
             map: map,
-            animation: google.maps.Animation.DROP,
-            title: 'Hello World!'
+            animation: google.maps.Animation.DROP
         });
+    });
+
+    var cart = {};
+    $(document).on( "click", ".item", function() {
+        var id = $(this).find('.id').text();
+        cart[id].amount = cart[id].amount + 1;
     });
 
     var productView = $('.productView');
@@ -51,12 +66,14 @@ $( document ).ready(function() {
             var itemPrice = item.price;
             var itemDescription = item.description;
             var itemImg = item.img;
+            cart[itemId] = {"name":itemName, "price":itemPrice, "description": itemDescription, "img": itemImg, "amount": 0};
             innerHtml += "" +
                 "<div class=\"item\">" +
                     "<image src=\"img/placeholder_product.jpg\"></image>" +
                     "<h3>" + itemName + "</h3>" +
                     "<div>" + itemDescription + "</div>" +
                     "<span>" + itemPrice + " &euro;</span>" +
+                    "<span class=\"id\">" + itemId + "</span>" +
                 "</div>"
         }
 

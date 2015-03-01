@@ -85,7 +85,7 @@ nav h1{
     margin-left: 19px;
     margin-top: -30px;
     border-radius: 40px;
-    border: 2px solid rgba(147, 149, 151, 0.5);;
+    border: 2px solid rgba(147, 149, 151, 0.5);
 }
 .hScroll div.item{
     height: 100px;
@@ -112,6 +112,53 @@ nav h1{
     right: 5px;
     bottom: 5px;
     font-size: 10px;
+}
+.hScroll div.item span.id{
+    display: none;
+}
+
+/* cartView */
+.cartView ul{
+    list-style-type: none;
+    padding: 10px;
+}
+.cartView li{
+    position: relative;
+}
+.cartView li img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    border: 2px solid rgba(147, 149, 151, 0.5);
+}
+.cartView li h3{
+    position: absolute;
+    top: 38px;
+    margin: 0px;
+    left: 110px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.cartView li div{
+    color: gray;
+    position: absolute;
+    right: 0px;
+    top: 38px;
+    font-size: 16px;
+}
+.cartView li hr{
+    opacity: 0.2;
+    margin: 15px 0px 15px 100px;
+}
+.cartView .total{
+    font-size: 45px;
+    text-align: center;
+    color: gainsboro;
+}
+.cartView .totalPrice{
+    font-size: 45px;
+    text-align: center;
+    color: gray;
 }
 
 .mapView .map-canvas{
