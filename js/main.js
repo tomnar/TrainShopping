@@ -34,7 +34,7 @@ $( document ).ready(function() {
             }
         }
 
-        $('.totalPrice').text(totalPrice + " €");
+        $('.totalPrice').html(totalPrice.toFixed(2) + " &euro;");
 
         setView(2);
     });
@@ -61,28 +61,6 @@ $( document ).ready(function() {
     });
 
     cart = {};
-    $(document).on( "click", ".plus", function() {
-        var id = $(this).parent().find('.id').text();
-        var counter = $(this).parent().find('.counter');
-
-        cart[id].amount = cart[id].amount + 1;
-        counter.text(cart[id].amount + " x ");
-    });
-    $(document).on( "click", ".minus", function() {
-        var id = $(this).parent().find('.id').text();
-        var counter = $(this).parent().find('.counter');
-
-        if(cart[id].amount > 0){
-            cart[id].amount = cart[id].amount - 1;
-
-            if(cart[id].amount == 0){
-                counter.text("");
-            }
-            else{
-                counter.text(cart[id].amount + " x ");
-            }
-        }
-    });
 
     var productView = $('.productView');
     for(var i = 0; i < products.length; i++){
@@ -118,6 +96,29 @@ $( document ).ready(function() {
             "</div>"
         );
     }
+
+    productView.on( "click", ".plus", function() {
+        var id = $(this).parent().find('.id').text();
+        var counter = $(this).parent().find('.counter');
+
+        cart[id].amount = cart[id].amount + 1;
+        counter.text(cart[id].amount + " x ");
+    });
+    productView.on( "click", ".minus", function() {
+        var id = $(this).parent().find('.id').text();
+        var counter = $(this).parent().find('.counter');
+
+        if(cart[id].amount > 0){
+            cart[id].amount = cart[id].amount - 1;
+
+            if(cart[id].amount == 0){
+                counter.text("");
+            }
+            else{
+                counter.text(cart[id].amount + " x ");
+            }
+        }
+    });
 });
 
 
