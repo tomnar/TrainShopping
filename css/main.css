@@ -191,7 +191,34 @@ nav h1{
 }
 
 .mapView .map-canvas{
-    height: 600px;
+    height: 585px;
+}
+.mapView .map-info{
+    position: absolute;
+    border-top: 2px solid lightgray;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    top: 603px;
+    height: 200px;
+    font-size: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.mapView .map-info div{
+    width: 30%;
+    float: left;
+    padding: 5px;
+}
+.views .view.mapView .code{
+    width: 65px;
+    text-align: center;
+    border: 3px solid #0e76bc;
+    position: absolute;
+    right: 10px;
+    padding: 0px;
+    top: -80px;
+    font-size: 55px;
 }
 
 .views {
