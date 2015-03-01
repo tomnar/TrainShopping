@@ -50,9 +50,11 @@ nav h1{
     height: 150px;
     width: 100%;
     overflow: scroll;
+    white-space: nowrap;
 }
 .views .view.productView{
     background-color: #E6E7E8;
+    margin-bottom: 60px;
 }
 .views .view.productView h2{
     text-align: left;
@@ -75,9 +77,6 @@ nav h1{
     font-size: 10px;
     color: gray;
     text-transform: uppercase;
-}
-.hScroll div{
-    white-space: nowrap;
 }
 .hScroll img{
     height: 60px;
@@ -176,11 +175,10 @@ nav h1{
         width: 100%;
         min-height: 100%;
 
-        /*
-        breaks the scroll view
+        padding-top: 42px;
         position: absolute;
         top: 0;
-        */
+        
 
         display: none;
     }
@@ -198,6 +196,7 @@ nav h1{
             background: url("../img/trainblurred.jpg") left top no-repeat;
             background-size: cover;
             text-align: center;
+            overflow: auto
         }
 
             .views .view.loginView .logo {

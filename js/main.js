@@ -80,9 +80,7 @@ $( document ).ready(function() {
         productView.append(
             "<h2>" + catName + "</h2>" +
             "<div class=\"hScroll\">" +
-                "<div>" +
-                    innerHtml +
-                "</div>" +
+                innerHtml +
             "</div>"
         );
     }
@@ -97,7 +95,8 @@ function initViews() {
     viewHistory.push(0);
     $('.button.back').click(function() {
         if (viewHistory.length > 1) {
-            setView(viewHistory.pop(), false);
+            viewHistory.pop()
+            setView(viewHistory[viewHistory.length - 1], false);
         }
     });
 }
@@ -122,8 +121,8 @@ function setView(index, history) {
             $currentView.hide();
             $view.css({zIndex: 0});
             $('body').removeClass($currentView.data('name')).addClass($view.data('name'));
-
             $currentView = $view;
+            $('.views').height($currentView.height() + 42);
         });
 
         // slide out current view
