@@ -2,6 +2,7 @@ var $views,
     $currentView,
     initialWidth,
     time          = 500,
+    easing        = 'easeInOutCubic',
     viewHistory   = [];
 
 $( document ).ready(function() {
@@ -12,7 +13,6 @@ $( document ).ready(function() {
     initViews();
 
     $('.cart.button').click(function(){
-
         var totalPrice = 0;
 
         var list = $('ul');
@@ -36,6 +36,12 @@ $( document ).ready(function() {
 
         $('.totalPrice').html(totalPrice.toFixed(2) + " &euro;");
 
+        if (totalPrice > 0) {
+            $('.button.buy').removeClass('disabled');
+        } else {
+            $('.button.buy').addClass('disabled');
+        }
+
         setView(2);
     });
 
@@ -44,6 +50,10 @@ $( document ).ready(function() {
     });
 
     $('.cartView .buy').click(function(){
+        if ($(this).hasClass('disabled')) {
+            return;
+        }
+
         setView(3);
 
         var myLatlng = new google.maps.LatLng(52.525084,13.369402);
@@ -107,6 +117,10 @@ $( document ).ready(function() {
 
         cart[id].amount = cart[id].amount + 1;
         counter.text(cart[id].amount + " x ");
+
+        $(this).animate({fontSize: '250px', top: '-90px', right: '-30px', opacity: 0, width: '200px'}, {duration: time, easing: easing, complete: function() {
+            $(this).css({fontSize: '25px', top: '10px', right: '5px', width: '45px'}).animate({opacity: 1});
+        }});
     });
     productView.on( "click", ".minus", function() {
         var id = $(this).parent().find('.id').text();
@@ -122,6 +136,8 @@ $( document ).ready(function() {
                 counter.text(cart[id].amount + " x ");
             }
         }
+
+        $(this).css({fontSize: '250px', top: '-90px', opacity: 0, width: '200px'}).animate({fontSize: '25px', top: '10px', width: '45px', opacity: 1}, {duration: time, easing: easing});
     });
 });
 
@@ -129,7 +145,11 @@ $( document ).ready(function() {
 
 function initViews() {
     $currentView = $views.first();
-    $currentView.show();
+    $currentView.fadeIn(time * 0.5, function(){
+        $(this).find('.logo').fadeIn(time * 0.5, function() {
+            $(this).parent().find('.login.button').fadeIn(time * 0.5);
+        });
+    });
     $('body').addClass($currentView.data('name'));
     viewHistory.push(0);
     $('.button.back').click(function() {
@@ -145,6 +165,7 @@ function setView(index, history) {
 
     if ($currentView.index() !== index) {
         var $view = $($views[index]);
+        window.scrollTo(0, 0);
 
         // prepare next view
         $view.css({
@@ -156,18 +177,18 @@ function setView(index, history) {
         // slide in next view
         $view.stop().animate({
             left: 0
-        }, time, function() {
+        }, {duration: time, easing: easing, complete: function() {
             $currentView.hide();
             $view.css({zIndex: 0});
             $('body').removeClass($currentView.data('name')).addClass($view.data('name'));
             $currentView = $view;
             $('.views').height($currentView.height() + 42);
-        });
+        }});
 
         // slide out current view
         $currentView.stop().animate({
             left: '-' + initialWidth + 'px'
-        }, time);
+        }, {duration: time, easing: easing});
 
         // push to history
         if (history) {

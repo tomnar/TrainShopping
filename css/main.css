@@ -36,6 +36,11 @@ nav .cart{
     top: 2px;
     right: 2px;
 }
+    nav .cart svg {
+        width: 40px;
+        height: 50px;
+    }
+
 nav h1{
     text-align: center;
     margin: 0;
@@ -201,6 +206,10 @@ nav h1{
     padding: 10px;
 }
 
+.views .view.cartView .disabled {
+    opacity: 0.2;
+}
+
 .mapView .map-canvas{
     height: 585px;
 }
@@ -299,8 +308,12 @@ nav h1{
             background: url("../img/trainblurred.jpg") left top no-repeat;
             background-size: cover;
             text-align: center;
-            overflow: auto
+            overflow: auto;
+            display: none;
         }
+            .views .view.loginView .button.login {
+                display: none;
+            }
 
             .views .view.loginView .logo {
                 background: url("../img/TSLogo.svg");
@@ -311,7 +324,8 @@ nav h1{
                 width: 140px;               
                 height: 140px;   
                 margin: 75px auto 110px;     
-                opacity: 0.85;       
+                opacity: 0.85;
+                display: none;     
             }
 
 
