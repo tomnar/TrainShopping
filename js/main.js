@@ -102,10 +102,10 @@ $( document ).ready(function() {
             innerHtml += "" +
                 "<div class=\"item\">" +
                     "<image src=\"img/" + itemImg + "\"></image>" +
-                    "<h3>" + itemName + "</h3>" +
+                    "<h3><marquee behavior=\"alternate\">" + itemName + "</marquee></h3>" +
                     "<span class=\"plus\">+</span>" +
                     "<span class=\"minus\">-</span>" +
-                    "<div>" + itemDescription + "</div>" +
+                    "<div><marquee>" + itemDescription + "</marquee></div>" +
                     "<span><span class=\"counter\"></span>" + itemPrice + " &euro;</span>" +
                     "<span class=\"id\">" + itemId + "</span>" +
                 "</div>"
