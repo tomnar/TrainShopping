@@ -96,6 +96,22 @@ nav h1{
     border: 1px solid rgba(147, 149, 151, 0.75);
     position: relative;
 }
+.hScroll div.item .plus{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    font-size: 25px;
+    width: 45px;
+    text-align: right;
+}
+.hScroll div.item .minus{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    width: 45px;
+}
 .hScroll div.item div{
     color: gray;
     padding: 5px;
@@ -111,6 +127,10 @@ nav h1{
     right: 5px;
     bottom: 5px;
     font-size: 10px;
+}
+.hScroll div.item span .counter{
+    position: initial;
+    font-weight: bold;
 }
 .hScroll div.item span.id{
     display: none;

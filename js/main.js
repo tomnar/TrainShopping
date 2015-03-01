@@ -46,10 +46,28 @@ $( document ).ready(function() {
         });
     });
 
-    var cart = {};
-    $(document).on( "click", ".item", function() {
-        var id = $(this).find('.id').text();
+    cart = {};
+    $(document).on( "click", ".plus", function() {
+        var id = $(this).parent().find('.id').text();
+        var counter = $(this).parent().find('.counter');
+
         cart[id].amount = cart[id].amount + 1;
+        counter.text(cart[id].amount + " x ");
+    });
+    $(document).on( "click", ".minus", function() {
+        var id = $(this).parent().find('.id').text();
+        var counter = $(this).parent().find('.counter');
+
+        if(cart[id].amount > 0){
+            cart[id].amount = cart[id].amount - 1;
+
+            if(cart[id].amount == 0){
+                counter.text("");
+            }
+            else{
+                counter.text(cart[id].amount + " x ");
+            }
+        }
     });
 
     var productView = $('.productView');
@@ -71,8 +89,10 @@ $( document ).ready(function() {
                 "<div class=\"item\">" +
                     "<image src=\"img/placeholder_product.jpg\"></image>" +
                     "<h3>" + itemName + "</h3>" +
+                    "<span class=\"plus\">+</span>" +
+                    "<span class=\"minus\">-</span>" +
                     "<div>" + itemDescription + "</div>" +
-                    "<span>" + itemPrice + " &euro;</span>" +
+                    "<span><span class=\"counter\"></span>" + itemPrice + " &euro;</span>" +
                     "<span class=\"id\">" + itemId + "</span>" +
                 "</div>"
         }
