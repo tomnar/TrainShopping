@@ -215,7 +215,7 @@ products = [{
         "name": "Postkarte Berlin",
         "price": 1.00,
         "description": "",
-        "img": "402."
+        "img": "402.jpg"
     }, {
         "id": 403,
         "name": "Plüschbär BERLIN",
